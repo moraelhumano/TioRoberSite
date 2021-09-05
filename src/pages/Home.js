@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import HeroHome from '../components/Hero';
-import Services from '../components/Services';
+import Shows from '../components/Shows';
 import Profile from '../components/Profile';
 import Projects from '../components/Projects'
 import Movie from '../components/Movie';
+import Clases from '../components/Clases';
 
 
 
@@ -15,7 +16,8 @@ class Home extends Component{
             <HeroHome />  
             <Movie />
             <Profile />
-            <Services />
+            <Clases/>
+            <Shows />
             <Projects />
         </>
 

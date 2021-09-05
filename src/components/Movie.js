@@ -24,10 +24,12 @@ class Movie extends Component{
         <section className="bg-white w-full flex justify-center mt-12">
             <Zoom>
                 <div className="flex flex-col items-center">
-                    <img src={ArielNominado} />
-                    <div className="flex justify-center subtitle-section flex-col">
-                    <p className="text-3xl mt-8 text-center">Trailer</p>
-                    <iframe className="mt-8 self-center" width="560" height="315" src="https://www.youtube.com/embed/rMZgZydvg1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+                    <img className="w-full" src={ArielNominado} />
+                    <div className="flex justify-center  w-2/3  h-96 flex-col">
+                    <div className="title-section">
+                    <p className="text-3xl  mt-8 text-center text-gray-800 pb-2">Trailer</p>
+                    </div>
+                    <iframe className="mt-8 self-center h-full sm:w-2/3"  src="https://www.youtube.com/embed/rMZgZydvg1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
                     </div>
                 </div>
             </Zoom>

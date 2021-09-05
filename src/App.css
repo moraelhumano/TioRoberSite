@@ -29,17 +29,14 @@ nav{
 }
 
 .hero-home{
-  height: 100vh;
-  background-color: #180d1c;
   background-image: url("../src/tiorober-bg.jpg");
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.background-mora{
-  height: 100%;
+.background-rober{
   background-image: url("../src/tioroberhome.png");
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -61,9 +58,10 @@ nav{
 }
 
 .container-services{
-  height: 60vh;
+  width: 100%;
   display: flex;
   align-items: center;
+
 }
 
 .title-section{
@@ -131,7 +129,24 @@ nav{
 }
 
 
-@media (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+  .background-rober{
+    background-image: none;
+
+  }
+
+  .hero-home{
+    background-image: url("../src/tiorober-bg.jpg");
+    text-align: center;
+  }
+
+  .wrap-own{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
 
   .display-none-s{
       display: none !important;
@@ -170,39 +185,3 @@ nav{
 
 
 
-
-
-@media (max-width: 640px) {
-
-  .display-none-s{
-      display: none !important;
-  }
-
-  .leading-3{
-      line-height: 3.5rem !important;
-  }
-
-  .sm-text-center{
-    text-align: center !important;
-  }
-
-  .sm-justify-center{
-    justify-content: center;
-  }
-
-  .sm-button-content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .sm-button-content a{
-    display: flex;
-    justify-content: center;
-  }
-
-  .h-content-links{
-    height: auto;
-  }
-
-}

@@ -25,18 +25,17 @@ class Profile extends Component{
                     </div>
                 </Bounce>
             <Zoom>
-                <section className="max-w-5xl mx-auto mx-8 container-services">
-                    <section className="flex justify-center">
+                <section className="max-w-5xl mt-4 md:mt-12 mx-auto mx-8 container-services">
+                    <section className="flex justify-center flex-wrap">
                         <div className="sm:w-1/2 p-6 sm-text-center">
                             <h3 className="text-5xl text-gray-800 font-bold leading-none">
                                 ¡Ma po favo!
                             </h3>
                             <p className="text-2xl text-gray-600 mt-4">
-                            Además de <b>comediante y locutor</b>, Andrade es guionista y cineasta egresado del 
-                            Centro de Capacitación Cinematográfica y en <b>2007 fundó el Centro Cultural Woody 
-                            Allen.</b>
+                            Además de <b>comediante y locutor</b>, he colaborado como guionista y cineasta egresado del 
+                            Centro de Capacitación Cinematográfica y en <b>2007 fundé el Centro Cultural Woody 
+                            Allen.</b> 
                             </p>
-
                         </div>
                         <Carousel className="carousel-fan h-full" interval={3000} autoPlay swipeable dynamicHeight infiniteLoop width  >
                             <div className="flex">
@@ -45,7 +44,6 @@ class Profile extends Component{
                             <div className="flex">
                                 <img className="img-carousel" src={Rober02} />
                             </div>
-
                         </Carousel>
                     </section>
                 </section>

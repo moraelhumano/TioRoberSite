@@ -7,8 +7,8 @@ class Footer extends Component{
         return (
         <>
         <section style={{backgroundColor:'#180d1c'}}>
-            <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-                <div className="flex justify-center mt-8 space-x-6">
+            <div className="max-w-screen-xl px-4 py-4 md:py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+                <div className="flex justify-center p-4 md:p-8 space-x-6">
                     <a href="https://www.instagram.com/tiorober_/?hl=es" target="_blank" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Instagram</span>
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
@@ -34,7 +34,7 @@ class Footer extends Component{
                         </svg>
                     </a>
                 </div>
-                <p className="mt-8 text-base leading-6 text-center text-gray-400">
+                <p className=" text-base  text-center text-gray-400">
                     © 2021 Roberto Andrade, Inc. All rights reserved. <br/>
                     Created By Mora Hubert
                 </p>

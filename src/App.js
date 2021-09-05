@@ -29,9 +29,9 @@ function App() {
     <Router>
       <Switch>
         <React.Fragment>
-          <NavBar />
             <div>
-              <Route  className="container p-4 col-md-10"  path="/" component={Home} exact />
+            <NavBar />
+              <Route   path="/" component={Home} exact />
               {/* <Route path="/alumni" component={Alumni}  /> */}
               <Route path="/bio" component={Bio}  />
             </div>
