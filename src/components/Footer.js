@@ -6,9 +6,10 @@ class Footer extends Component{
     render() {
         return (
         <>
-        <section style={{backgroundColor:'#180d1c'}}>
-            <div className="max-w-screen-xl px-4 py-4 md:py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-                <div className="flex justify-center p-4 md:p-8 space-x-6">
+        <section className="shadow-navbar">
+            <div className="max-w-screen-xl text-center md:py-6 pt-2 mx-auto overflow-hidden">
+                <p className="text-xl text-gray-400 text-2xl">Sígueme en mis redes</p>
+                <div className="flex justify-center space-x-6 mt-2">
                     <a href="https://www.instagram.com/tiorober_/?hl=es" target="_blank" className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Instagram</span>
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
@@ -34,9 +35,9 @@ class Footer extends Component{
                         </svg>
                     </a>
                 </div>
-                <p className=" text-base  text-center text-gray-400">
+                <p className="text-base text-center text-gray-400 mt-2">
                     © 2021 Roberto Andrade, Inc. All rights reserved. <br/>
-                    Created By Mora Hubert
+                    Website created By Mora Hubert
                 </p>
             </div>
         </section>

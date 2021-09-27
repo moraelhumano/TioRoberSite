@@ -124,13 +124,58 @@ nav{
 }
 
 .button-home:hover{
-  background-color:#2b2b2b ;
+  background-color:#e9dddd ;
   color:#fff;
 }
 
 
+.bg-estamal{
+  background-image: url("../src/bg-reirsedeesto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center ;
+}
+.w-45{
+  width: 49% !important;
+}
+
+.w-49{
+  width: 49%;
+}
+
+
+.fecha-card{
+  width: 90%;
+}
+
+.fecha-card .date{
+width: 15%;
+}
+
+.fecha-card .locacion{
+  width: 80%;
+  }
+
+
+
+
 @media (min-width: 320px) and (max-width: 480px) {
 
+  .w-45{
+    width: 100%;
+  }
+
+  .w-45 .date{
+    width: 15%;
+    }
+
+  .w-49{
+    width: 100%;
+  }
+  
+  .fecha-card{
+    width: 100% !important;
+  }
 
   .background-rober{
     background-image: none;
@@ -140,6 +185,13 @@ nav{
   .hero-home{
     background-image: url("../src/tiorober-bg.jpg");
     text-align: center;
+  }
+
+  .bg-estamal{
+    background-image: url("../src/estamalmobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
   }
 
   .wrap-own{

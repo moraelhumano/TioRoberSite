@@ -1,6 +1,4 @@
 import React from "react";
-import ImageUploading from 'react-images-uploading';
-
 
 
 import {
@@ -15,9 +13,7 @@ import NavBar from './components/Navbar';
 
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import AlumniRegister from './pages/AlumniRegister';
 import Bio from "./pages/Bio";
-import Alumni from "./components/Alumni";
 
 
 
