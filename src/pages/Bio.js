@@ -18,11 +18,11 @@ class Bio extends Component{
         <section className="font-sans antialiased text-gray-900 leading-normal tracking-wider pb-6 bg-estamal bg-estamal">
           <div className="max-w-4xl flex items-center justify-center flex-col flex-wrap mx-auto lg:my-0 pb-10 md:pt-20 pt-0">
             <div id="profile" className="w-10/12 rounded-lg lg:rounded-l-lg  md:w-full shadow-2xl md:mt-20 mt-28 bg-white  mx-6 lg:mx-0">
-              <div className="pt-36 md:p-8 md:pt-20 text-center lg:text-left shadow-2xl md:shadow-none">
-                <div className="text-center pb-4">
+              <div className="pt-36 md:p-6 md:pt-20 text-center lg:text-left shadow-2xl md:shadow-none">
+                <div className="text-center pb-6 md:pb-0">
                   <div className="block rounded-full shadow-xl  mx-auto -m-32 h-48 w-48 bg-cover bg-center" style={{ backgroundImage: `url(${TioRoberBio})`}}></div>
                     <div className="pt-32">
-                    <h2 className="text-3xl  pt-4 lg:mt-2">Tour</h2>
+                    <h2 className="text-3xl  pt-4">Tour</h2>
                     <h2 className="text-4xl font-bold lg:mt-2">Está mal reirse de esto</h2>
                     <p className="text-2xl lg:mt-2">Encuentra aquí tus boletos</p>
                     {/* <div className="flex align-center justify-center items-center pt-2">
