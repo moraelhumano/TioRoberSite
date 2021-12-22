@@ -3,6 +3,14 @@ import { db } from "../firebase";
 import { toast } from "react-toastify";
 import ImageUploading from 'react-images-uploading';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 
 
 const AlumniRegister = (props) => {
