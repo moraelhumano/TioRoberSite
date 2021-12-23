@@ -13,9 +13,10 @@ class Clases extends Component{
         return (
         <>
         <Zoom>
-        <section className="container max-w-5xl mx-auto mx-8 mt-4 md:mt-0">
-                <div className="flex flex-wrap flex flex-row-reverse  sm-justify-center items-center flex-wrap">
-                    <div id="capacitacion" className="w-6/6 sm:w-1/2 p-6 sm-text-center">
+            <section className='bg-white mt-12 flex items-center flex-col'>
+        <section className="max-w-5xl mt-4 mx-auto mx-8 container-services  md:mt-0">
+                <div className="flex flex-wrap flex-row-reverse items-center ">
+                    <div id="capacitacion" className="w-6/6 sm:w-1/2 p-6 md:pr-0">
                         <h3 className="text-4xl text-gray-800 font-bold leading-none mb-3">
                             Aprende a escribir comedia
                         </h3>
@@ -39,6 +40,7 @@ class Clases extends Component{
                         <img className="" src={ClasesP} alt="" />
                     </div>
                 </div>
+            </section>
             </section>
         </Zoom>
         </>

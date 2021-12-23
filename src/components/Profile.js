@@ -16,7 +16,7 @@ class Profile extends Component{
     render() {
         return (
         <>
-        <section className="bg-white mt-12">
+        <section className="bg-white mt-12 flex items-center flex-col">
         <Bounce right>
                     <div className="title-section">
                         <h3 className="text-3xl text-center text-gray-800 font-bold leading-none">
@@ -26,8 +26,8 @@ class Profile extends Component{
                 </Bounce>
             <Zoom>
                 <section className="max-w-5xl mt-4 md:mt-12 mx-auto mx-8 container-services">
-                    <section className="flex justify-center flex-wrap">
-                        <div className="sm:w-1/2 p-6 sm-text-center">
+                    <section className="flex justify-between flex-wrap">
+                        <div className="sm:w-1/2 p-6 md:pl-0 sm-text-center">
                             <h3 className="text-5xl text-gray-800 font-bold leading-none">
                                 ¡Ma po favo!
                             </h3>
@@ -37,7 +37,7 @@ class Profile extends Component{
                             Allen.</b> 
                             </p>
                         </div>
-                        <Carousel className="carousel-fan h-full" interval={3000} autoPlay swipeable dynamicHeight infiniteLoop width  >
+                        <Carousel className="carousel-fan h-full w-full sm:w-1/2" interval={3000} autoPlay swipeable dynamicHeight infiniteLoop width  >
                             <div className="flex">
                                 <img className="img-carousel" src={Rober01} />
                             </div>

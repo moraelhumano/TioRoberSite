@@ -119,9 +119,8 @@ class Bio extends Component{
               </a>
 
             </div>
-            <div className="mt-0 md:mt-6 w-full px-2  md:px-0 flex justify-left items-left">
-              
-              <a className="h-14 mt-2 w-49 md:mt-0  md:mr-2 w-full w-49 shadow-2xl flex items-center pl-0 pr-0  bg-white rounded-lg" target="_blank" href="https://arema.mx/evento/7215">
+            <div className="mt-0 md:mt-6 w-full px-2  md:px-0 flex md:self-start">
+              <a className="h-14 mt-2 w-49 md:mt-0 w-full md:mr-2  shadow-2xl flex items-center pl-0 pr-0  bg-white rounded-lg" target="_blank" href="https://arema.mx/evento/7215">
               <div className="h-full date flex flex-col text-center shadow-navbar justify-center text-white font-bold date"    style={{  width: '15%'}} >
                   <p>26</p>
                     <p>NOV</p>
