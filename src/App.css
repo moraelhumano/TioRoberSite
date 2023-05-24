@@ -28,11 +28,11 @@ nav{
 }
 
 .hero-home{
-  background-image: url("../src/tiorober-bg.jpg");
+  background-image: url("../src/TioRoberHero2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: initial;
 }
 
 .background-rober{
@@ -100,8 +100,7 @@ nav{
 }
 
 .leading-normal {
-  font-family: 'Hina Mincho' !important;
-}
+  font-family: 'Source Sans Pro', sans-serif;}
 
 .border-primary{
   border: 1px solid rgba(213,51,105,1);
