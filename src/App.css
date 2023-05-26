@@ -2,10 +2,7 @@ body{
   font-family: 'Hina Mincho';
 }
 
-nav{
-  border-bottom: 2px solid white;
-  font-family: 'Hina Mincho';
-}
+
 
 *, ::after, ::before {
   --tw-border-opacity: 0;
@@ -124,6 +121,10 @@ nav{
 .button-home:hover{
   background-color:#e9dddd ;
   color:#fff;
+}
+
+.bg-blue-pepsi{
+  background: #003263 ;
 }
 
 

@@ -9,18 +9,17 @@ import Clases from '../components/Clases';
 
 
 
-class Home extends Component{
+class Home extends Component {
     render() {
         return (
-        <>
-            <HeroHome />  
-            <Movie />
-            <Profile />
-            <Clases/>
-            <Shows />
-            <Projects />
-        </>
-
+            <>
+                <HeroHome />
+                <Shows />
+                <Movie />
+                <Profile />
+                <Clases />
+                <Projects />
+            </>
         )
     }
 }

@@ -14,6 +14,7 @@ import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Bio from "./pages/Bio";
+import PepsiCenterBanner from "./components/PepsiCenterBanner";
 
 
 
@@ -25,8 +26,8 @@ function App() {
     <Router>
       <Switch>
         <React.Fragment>
-            <div>
-            <NavBar />
+            <div className="flex flex-col">
+            <PepsiCenterBanner />
               <Route   path="/" component={Home} exact />
               {/* <Route path="/alumni" component={Alumni}  /> */}
               <Route path="/calendario" component={Bio}  />
