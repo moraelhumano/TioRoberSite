@@ -7,8 +7,16 @@ import { Carousel } from 'react-responsive-carousel';
 
 import show01 from '../../src/PDP09062023V2.jpeg';
 import show02 from '../../src/PDP10062023V2.jpeg';
-import show03 from '../../src/PDP26082023V2.jpeg';
-import show04 from '../../src/PDP26082023V2.jpeg';
+import show03 from '../../src/PDP26052023V2.jpeg';
+import show04 from '../../src/LHF20062023V2.jpeg';
+import show05 from '../../src/LHF22062023V2.jpeg';
+import show06 from '../../src/LHF23062023V2.jpeg';
+import show07 from '../../src/LHF25062023V2.jpeg';
+import show08 from '../../src/LHF26062023V2.jpeg';
+import show09 from '../../src/LHF27062023V2.jpeg';
+import show10 from '../../src/LHF29062023V2.jpeg';
+import show11 from '../../src/LHF03072023V2.jpeg';
+import show12 from '../../src/LHF10082023V2.jpeg';
 
 
 const eventos = [
@@ -83,10 +91,31 @@ class Shows extends Component {
                                         <img className="img-carousel-shows" src={show03} />
                                     </div>
                                     <div className="flex">
-                                        <img className="img-carousel-shows" src={show03} />
+                                        <img className="img-carousel-shows" src={show04} />
                                     </div>
                                     <div className="flex">
-                                        <img className="img-carousel-shows" src={show03} />
+                                        <img className="img-carousel-shows" src={show05} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show06} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show07} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show08} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show09} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show10} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show11} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show12} />
                                     </div>
                                 </Carousel>
                             </div>

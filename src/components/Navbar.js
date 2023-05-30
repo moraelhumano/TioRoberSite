@@ -29,7 +29,7 @@ const NavBar = () => {
       <div className=" flex sm:hidden md:flex lg:flex w-full z-20 bg-transparent px-12 md:px-20 mx-auto py-2 justify-center md:justify-between self-start" style={{ paddingTop: "70px" }}>
         <div className="flex w-full items-center justify-between display-none-s">
           <Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
-            <img className="h-12 items-center" src={LogoRober} alt="" />
+            <img className="h-15 items-center" src={LogoRober} alt="" />
           </Link>
           <div className='flex justify-end'>
             <Link to="/calendario" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
