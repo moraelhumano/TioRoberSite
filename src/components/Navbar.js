@@ -48,7 +48,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative md:hidden">
         <button
           className="block lg:hidden p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
           onClick={toggleMenu}
