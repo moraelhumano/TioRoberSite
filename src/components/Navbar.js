@@ -48,13 +48,13 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="relative md:hidden">
+      <div className="flex fixed justify-end relative md:hidden">
         <button
-          className="block lg:hidden p-2 rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+          className="inline-block justify-self-end	 lg:hidden p-2 rounded-md text-white focus:outline-none focus:text-white"
           onClick={toggleMenu}
         >
           <svg
-            className="h-6 w-6 fill-current"
+            className="h-10 w-10 fill-current  text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -72,21 +72,21 @@ const NavBar = () => {
           </svg>
         </button>
         {isOpen && (
-          <div className="md:hidden lg:hidden fixed top-0 left-0 h-screen w-full bg-black bg-opacity-75">
-            <ul className="p-4">
-              <li className="py-2">
-                <a href="#" className="text-gray-700 hover:text-gray-900">Inicio</a>
-              </li>
-              <li className="py-2">
-                <a href="#" className="text-gray-700 hover:text-gray-900">Acerca de</a>
-              </li>
-              <li className="py-2">
-                <a href="#" className="text-gray-700 hover:text-gray-900">Servicios</a>
-              </li>
-              <li className="py-2">
-                <a href="#" className="text-gray-700 hover:text-gray-900">Contacto</a>
-              </li>
-            </ul>
+          <div className="md:hidden lg:hidden flex flex-col text-center fixed top-16 left-0 h-screen w-full bg-black bg-opacity-75">
+            <div className="p-4 pt-8 flex items-center flex-col text-white list-none">
+            <Link to="/calendario" className="py-2 flex text-white font-bold">
+              <h2 className="">FECHAS</h2>
+            </Link>
+            <Link to="/calendario" className="py-2 flex text-white font-bold">
+              <h2 className="">TIENDA</h2>
+            </Link>
+            <Link to="/calendario" className="py-2 flex text-white font-bold">
+              <h2 className="">PRENSA</h2>
+            </Link>
+            <Link to="/calendario" className="py-2 flex text-white font-bold">
+              <h2 className="">PROGRAMAS</h2>
+            </Link>
+            </div>
           </div>
         )}
       </div>

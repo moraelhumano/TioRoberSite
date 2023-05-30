@@ -199,8 +199,8 @@ width: 15%;
   }
 
   .hero-home{
-    background-image: url("../src/tiorober-bg.jpg");
-    text-align: center;
+    background-image: url("../src/TioRoberHero2.jpg");
+    background-position: bottom;
   }
 
   .bg-estamal{
