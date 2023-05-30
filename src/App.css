@@ -15,7 +15,6 @@ body{
 }
 
 .carousel-fan{
-  width: 50vh;
   height: auto;
 }
 
@@ -63,7 +62,7 @@ body{
 .title-section{
   height: 5rem;
   width: 80%;
-  margin: auto;
+  margin-top:60px;
   border-bottom: #2b2b2b 2px solid;
   display: flex;
   justify-content: center;
@@ -71,7 +70,6 @@ body{
 }
 
 .title-section h3{
-  color: #2b2b2b;
   font-weight: bold;
 }
 
@@ -93,7 +91,8 @@ body{
 }
 
 .img-carousel-shows{
-  height: 500px;
+  height: 330px;
+  width: 60%;
 }
 
 .leading-normal {
@@ -110,16 +109,16 @@ body{
 }
 
 .button-home{
-  background-color:#fff ;
-  border: solid #2b2b2b 1px;
-  color:#2b2b2b;
-  height: 50px;
-  width: 250px;
+  background-color:red ;
+  border: solid red 1px;
+  color:white;
+  height: 30px;
   align-self: center;
+  padding:0 20px 0 20px ;
 }
 
 .button-home:hover{
-  background-color:#e9dddd ;
+  background-color:red ;
   color:#fff;
 }
 
@@ -134,6 +133,24 @@ body{
   background-size: cover;
   background-position:center ;
 }
+
+.bg-hora-feliz{
+  background-image: url("../src/bg-tio-cojo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+}
+
+.bg-pur{
+  background-image: url("../src/bg-pur.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+}
+
+
 .w-45{
   width: 49% !important;
 }

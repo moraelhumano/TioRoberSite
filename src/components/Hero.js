@@ -25,7 +25,7 @@ class HeroHome extends Component {
             <>
               <Fade>
                 <section className="hero-home h-screen grid justify-items-start">
-                  <NavBar className="justify-self-start" />
+                  <NavBar className="justify-self-start fixed" />
                   <div className=" sm:text-center pl-20">
                     <div className="text-center lg:text-left">
                       <p className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl text-shadow-lg">Roberto Andrade</p>

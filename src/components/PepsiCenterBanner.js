@@ -12,7 +12,7 @@ class PepsiCenterBanner extends Component {
     render() {
         return (
             <>
-                <a className='relative z-10' href="https://www.eticket.mx/masinformacion.aspx?IdEvento=30710" target="_blank">
+                <a className='z-10 fixed' href="https://www.eticket.mx/masinformacion.aspx?IdEvento=30710" target="_blank">
                     <div className="bg-blue-pepsi flex items-center justify-center">
                         <img className="logo-rey w-1/4" src={LaHoraPepsiCenter} />
                     </div>

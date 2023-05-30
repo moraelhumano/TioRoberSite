@@ -8,82 +8,95 @@ import { Carousel } from 'react-responsive-carousel';
 import show01 from '../../src/PDP09062023V2.jpeg';
 import show02 from '../../src/PDP10062023V2.jpeg';
 import show03 from '../../src/PDP26082023V2.jpeg';
+import show04 from '../../src/PDP26082023V2.jpeg';
 
 
-class Shows extends Component{
+const eventos = [
+    { id: 1, fecha: '9 de Junio', ubicacion: 'Mexicali, B.C.N', lugar: 'Teatro del IMSS', boletosLink:'https://arema.mx/e/10029', hora:"21:00 HRS" },
+    { id: 2, fecha: '10 de Junio', ubicacion: 'Tijuana, B.C.N', lugar: 'Espacio Creativo', boletosLink:'https://arema.mx/e/10031', hora:"21:00 HRS"  },
+    { id: 3, fecha: '14 de Junio', ubicacion: 'CDMX, MX', lugar: 'Marketeatro Roma', boletosLink:'https://arema.mx/@purdepatos', hora:"21:00 HRS"  },
+    { id: 4, fecha: '20 de Junio', ubicacion: 'Madrid, ESP', lugar: 'Teatro Soho',boletosLink:'https://www.eventbrite.ie/e/esta-mal-reirse-de-esto-stand-up-comedy-espanol-tickets-527474870537', hora:"22:00 HRS"  },
+    { id: 6, fecha: '22 de Junio', ubicacion: 'Barcelona, ESP', lugar: 'The Comedy Club House',boletosLink:'https://www.eventbrite.ie/e/esta-mal-reirse-de-esto-stand-up-comedy-espanol-tickets-631715236277', hora:"22:00 HRS"  },
+    { id: 7, fecha: '23 de Junio', ubicacion: 'París, FRN', lugar: 'Apollo Theater' ,boletosLink:'https://www.apollotheatre.fr/esta-mal-reirse-de-esto-lo3413.html', hora:"20:00 HRS"  },
+    { id: 8, fecha: '25 de Junio', ubicacion: 'Berlín, ALE', lugar: 'Cosmic Comedy Club' ,boletosLink:'https://comedyclubberlin.com/event/tio-rober-y-cojo-feliz-esta-mal-reirse-de-esto-comedia-en-espanol/', hora:"20:00 HRS"  },
+    { id: 9, fecha: '26 de Junio', ubicacion: 'Múnich, ALE', lugar: 'Substanz Club', boletosLink:'https://tickets.muenchenticket.net/shop?shopid=209&wes=24430eea209&query_pos=0&query_rows=1000&set_query_pos=0&houseid=890&performanceid=393516&state=3&nextstate=4', hora:"22:00 HRS"  },
+    { id: 10, fecha: '27 de Junio', ubicacion: 'Ámsterdam, HOL', lugar: 'Boom Chicago',boletosLink:'https://fareharbor.com/embeds/book/boomchicago/items/439992/availability/1134941906/book/?full-items=yes', hora:"20:00 HRS"  },
+    { id: 11, fecha: '29 de Junio', ubicacion: 'Dublín, IE', lugar: 'Kalabasa Market',boletosLink:'https://www.eventbrite.ie/e/esta-mal-reirse-de-esto-stand-up-comedy-espanol-tickets-631721244247', hora:"20:30 HRS"  },
+    { id: 12, fecha: '3 de Julio', ubicacion: 'Londres, ING', lugar: 'Up The Creek',boletosLink:'https://www.eventbrite.ie/e/esta-mal-reirse-de-esto-stand-up-comedy-espanol-tickets-544693983367', hora:"20:30 HRS"  },
+    { id: 13, fecha: '10 de Agosto', ubicacion: 'CDMX, MX', lugar: 'Pepsi Center', boletosLink:'https://www.eticket.mx/masinformacion.aspx?IdEvento=30710', hora:"21:00 HRS"  },
+    { id: 14, fecha: '26 de Agosto', ubicacion: 'Guadalajara, JAL', lugar: '',boletosLink:'', hora:""  },
+
+
+];
+
+console.log(eventos);
+
+
+class Shows extends Component {
     render() {
         return (
-        <>
-           <section className="max-w-4xl mt-20 bg-white rounded-2xl p-6 mx-auto container-services flex-col">
-            <Zoom>
-                <div className="title-section">
-                    <h3 className="text-2xl md:text-3xl text-gray-600 text-center text-white font-bold leading-none">
-                        PRÓXIMAS FECHAS
-                    </h3>
-                </div>
-            </Zoom>  
-            <section className="container w-full max-w-5xl mx-auto  mt-6 flex flex-col md:flex-row wrap-own">
-            <Bounce right>
-            <div  className=" flex justify-center md:justify-end mt-4 md:mt-0">
-                <Carousel className="carousel-fan h-full " interval={3000} autoPlay  dynamicHeight infiniteLoop width  >
-                    <div className="flex">
-                        <img className="img-carousel-shows" src={show01} />
-                    </div>
-                    <div className="flex">
-                        <img className="img-carousel-shows" src={show02} />
-                    </div>
-                    <div className="flex">
-                        <img className="img-carousel-shows" src={show03} />
-                    </div>
-                    <div className="flex">
-                        <img className="img-carousel-shows" src={show03} />
-                    </div>
-                    <div className="flex">
-                        <img className="img-carousel-shows" src={show03} />
-                    </div>
-                    
+            <>
+                <section className="bg-black text-white p-6 pb-20 mx-auto text-white container-services flex-col">
+                    <Zoom>
+                        <div className="title-section">
+                            <h3 className="text-2xl md:text-3xl text-white text-center text-white font-bold leading-none">
+                                PRÓXIMAS FECHAS
+                            </h3>
+                        </div>
+                    </Zoom>
+                    <section className="container w-full max-w-5xl mx-auto  mt-14 inline-flex flex-col md:flex-row wrap-own">
+                        <Bounce left>
+                            <div className="w-11/12 mt-8 md:mt-0 text-white mb-8 md:mb-0 text-lg md:text-right">
+                                <div>{eventos.map(evento => (
+                                    <div className=" text-center md:text-left mb-4"  key={evento.id}>
 
-                </Carousel>                       
-            </div>
-            </Bounce>
-            <Bounce left>
-            <div className="w-full mt-8 md:mt-0 text-gray-600 mb-8 md:mb-0 text-lg md:text-right">
-                <div className=" text-center md:text-right ">
-                    <p className="text-gray-600 text-xl font-bold">FORO DE PRUEBA</p>
-                    <p className="text-gray-600 text-xl font-bold">10 DE SEPTIEMBRE / 21:00 HRS</p>
-                    <a className="self-center mt-12" target="_blank" href="">
-                        <button class="mx-auto lg:mx-0 py-2 text-white font-bold bg-blue  px-4 border button-home content-center mt-4 rounded">
-                            COMPRA TUS BOLETOS
-                        </button>
-                    </a>
-                </div>
-                <div className="mt-8 text-center md:text-right">
-                    <p className="text-gray-600 font-bold text-xl">FORO DE PRUEBA</p>
-                    <p className="text-gray-600 font-bold text-xl">8 DE OCTUBRE / 21:00 HRS</p>
-                    <a className="self-center mt-12" target="_blank" href="">
-                        <button class="mx-auto lg:mx-0 py-2 text-white font-bold mt-4 bg-blue px-4 border button-home content-center rounded">
-                            COMPRA TUS BOLETOS
-                        </button>   
-                    </a>
-                </div>
-                <div className="mt-8 text-center md:text-right">
-                    <a className="self-center mt-12" target="_blank" href="">
-                    <p className="text-gray-600 font-bold text-xl">FORO DE PRUEBA</p>
-                    <p className="text-gray-600 font-bold text-xl">9 DE OCTUBRE / 21:00 HRS</p>
-                        <button class="mx-auto lg:mx-0 py-2 text-white font-bold bg-blue mt-4 px-4 border button-home content-center rounded">
-                            COMPRA TUS BOLETOS
-                        </button>
-                    </a>
-                </div>
-            </div>
-            </Bounce>
-        </section>
-       
-        </section>
-        </>
+                                        <div className='flex'>
+                                            <p className=" text-xl font-bold"> {evento.nombre}</p>
+                                            <p className='font-medium'>
+                                              <b> {evento.fecha}</b> - {evento.ubicacion} - {evento.lugar}  -  21:00 HRS
+                                            </p>
+                                        </div>
+                                        <a className="contents" target="_blank" href={evento.boletosLink} >
+                                            <button class="inline-flex h-16 flex inline-flex justify-center align-center lg:mx-0 mt-2   px-4 border button-home content-center ">
+                                                COMPRA TUS BOLETOS 
+                                            </button>
+                                        </a>
+                                    </div>
 
+
+                                ))}   
+                                </div>
+                              
+                                </div>
+
+                        </Bounce>
+                        <Bounce right>
+                            <div className="w-1/2 h-3/4	 flex justify-center md:justify-end mt-4 md:mt-0">
+                                <Carousel className="carousel-fan h-auto" interval={3000} autoPlay dynamicHeight infiniteLoop width>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show01} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show02} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show03} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show03} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show03} />
+                                    </div>
+                                </Carousel>
+                            </div>
+                        </Bounce>
+                    </section>
+                </section>
+            </>
         )
     }
 }
+
 export default Shows;
 

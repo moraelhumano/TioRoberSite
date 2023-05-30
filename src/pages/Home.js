@@ -3,8 +3,8 @@ import HeroHome from '../components/Hero';
 import Shows from '../components/Shows';
 import Profile from '../components/Profile';
 import Projects from '../components/Projects'
-import Movie from '../components/Movie';
 import Clases from '../components/Clases';
+import WebContent from '../components/WebContent';
 
 
 
@@ -15,10 +15,10 @@ class Home extends Component {
             <>
                 <HeroHome />
                 <Shows />
-                <Movie />
-                <Profile />
+                <WebContent />
+                {/*<Profile />
                 <Clases />
-                <Projects />
+        <Projects />*/}
             </>
         )
     }
