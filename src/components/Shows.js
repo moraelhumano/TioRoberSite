@@ -44,7 +44,7 @@ class Shows extends Component {
     render() {
         return (
             <>
-                <section className="bg-black text-white p-6 pb-20 mx-auto text-white container-services flex-col">
+                <section className="bg-black pt-10 text-white md:pb-6 pb-20 mx-auto text-white container-services flex-col">
                     <Zoom>
                         <div className="title-section">
                             <h3 className="text-2xl md:text-3xl text-white text-center text-white font-bold leading-none">
@@ -52,12 +52,11 @@ class Shows extends Component {
                             </h3>
                         </div>
                     </Zoom>
-                    <section className="container w-full max-w-5xl mx-auto  mt-14 inline-flex flex-col md:flex-row wrap-own">
+                    <section className="container w-full max-w-5xl mx-auto  mt-14 inline-flex flex-col-reverse items-center	md:items-start	 md:flex-row wrap-own">
                         <Bounce left>
-                            <div className="w-11/12 mt-8 md:mt-0 text-white mb-8 md:mb-0 text-lg md:text-right">
+                            <div className="w-11/12 mt-8 md:mt-0 text-white mb-8 md:mb-0 text-lg text-center md:text-right">
                                 <div>{eventos.map(evento => (
                                     <div className=" text-center md:text-left mb-4"  key={evento.id}>
-
                                         <div className='flex'>
                                             <p className=" text-xl font-bold"> {evento.nombre}</p>
                                             <p className='font-medium'>
@@ -79,7 +78,7 @@ class Shows extends Component {
 
                         </Bounce>
                         <Bounce right>
-                            <div className="w-1/2 h-3/4	 flex justify-center md:justify-end mt-4 md:mt-0">
+                            <div className="w-full md:w-1/2 h-3/4 flex justify-center md:justify-end mt-4 md:mt-0">
                                 <Carousel className="carousel-fan h-auto" interval={3000} autoPlay dynamicHeight infiniteLoop width>
                                     <div className="flex">
                                         <img className="img-carousel-shows" src={show01} />

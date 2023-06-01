@@ -20,7 +20,7 @@ body{
 
 
 .shadow-navbar{
-  background-color: #2b2b2b;
+  background-color: #000000;
 }
 
 .text-shadow-1{
@@ -66,7 +66,6 @@ body{
 .title-section{
   height: 5rem;
   width: 80%;
-  margin-top:60px;
   border-bottom: #2b2b2b 2px solid;
   display: flex;
   justify-content: center;
@@ -140,6 +139,15 @@ body{
 
 .bg-hora-feliz{
   background-image: url("../src/bg-tio-cojo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+}
+
+
+.bg-content-tio{
+  background-image: url("../src/RoberConetent.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
