@@ -48,7 +48,7 @@ class Shows extends Component {
                     <Zoom>
                         <div className="title-section">
                             <h3 className="text-2xl md:text-3xl text-white text-center text-white font-bold leading-none">
-                                PRÓXIMAS FECHAS
+                                PRÓXIMOS SHOWS
                             </h3>
                         </div>
                     </Zoom>
