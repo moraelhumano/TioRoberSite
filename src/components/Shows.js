@@ -69,8 +69,6 @@ class Shows extends Component {
                                             </button>
                                         </a>
                                     </div>
-
-
                                 ))}   
                                 </div>
                               
@@ -78,7 +76,7 @@ class Shows extends Component {
 
                         </Bounce>
                         <Bounce right>
-                            <div className="w-full md:w-1/2 h-3/4 flex justify-center md:justify-end mt-4 md:mt-0">
+                            <div className="w-full px-4  md:w-1/2 h-3/4 flex justify-center md:justify-end mt-4 md:mt-0">
                                 <Carousel className="carousel-fan h-auto" interval={3000} autoPlay dynamicHeight infiniteLoop width>
                                     <div className="flex">
                                         <img className="img-carousel-shows" src={show01} />

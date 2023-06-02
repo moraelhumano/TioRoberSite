@@ -53,7 +53,10 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="flex fixed justify-end relative md:hidden">
+      <div className="flex fixed justify-between	 relative md:hidden">
+      <Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+            <img className="h-20 items-center" src={LogoRober} alt="" />
+          </Link>
         <button
           className="inline-block justify-self-end	 lg:hidden p-2 rounded-md text-white focus:outline-none focus:text-white"
           onClick={toggleMenu}
@@ -79,10 +82,10 @@ const NavBar = () => {
         {isOpen && (
           <div className="md:hidden lg:hidden flex flex-col text-center fixed top-16 left-0 h-screen w-full bg-black bg-opacity-75">
             <div className="p-4 pt-8 flex items-center flex-col text-white list-none">
-            <Link to="/calendario" className="py-2 flex text-white font-bold">
+            <Link to="/shows" className="py-2 flex text-white font-bold">
               <h2 className="">FECHAS</h2>
             </Link>
-            <Link to="/calendario" className="py-2 flex text-white font-bold">
+          {/*  <Link to="/calendario" className="py-2 flex text-white font-bold">
               <h2 className="">TIENDA</h2>
             </Link>
             <Link to="/calendario" className="py-2 flex text-white font-bold">
@@ -90,7 +93,7 @@ const NavBar = () => {
             </Link>
             <Link to="/calendario" className="py-2 flex text-white font-bold">
               <h2 className="">PROGRAMAS</h2>
-            </Link>
+        </Link>*/}
             </div>
           </div>
         )}
