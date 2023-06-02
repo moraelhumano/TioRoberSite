@@ -80,8 +80,11 @@ const NavBar = () => {
           </svg>
         </button>
         {isOpen && (
-          <div className="md:hidden lg:hidden flex flex-col text-center fixed top-16 left-0 h-screen w-full bg-black bg-opacity-75">
+          <div className="md:hidden lg:hidden flex flex-col text-center fixed top-16 left-0 h-screen w-full bg-black ">
             <div className="p-4 pt-8 flex items-center flex-col text-white list-none">
+            <Link to="/" className="py-2 flex text-white font-bold">
+              <h2 className="">INICIO</h2>
+            </Link>
             <Link to="/shows" className="py-2 flex text-white font-bold">
               <h2 className="">FECHAS</h2>
             </Link>
