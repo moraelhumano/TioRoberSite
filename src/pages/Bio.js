@@ -75,7 +75,7 @@ class Bio extends Component{
                                             </p>
                                         </div>
                                         <a className="contents" target="_blank" href={evento.boletosLink} >
-                                            <button class="inline-flex h-16 flex inline-flex justify-center align-center lg:mx-0 mt-2   px-4 border button-home content-center ">
+                                            <button class="inline-flex flex inline-flex justify-center align-center lg:mx-0 mt-2   px-4 border button-home content-center ">
                                                 COMPRA TUS BOLETOS 
                                             </button>
                                         </a>
