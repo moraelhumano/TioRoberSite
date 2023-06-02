@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBar from './Navbar';
 
 
 
@@ -36,8 +37,7 @@ class Footer extends Component{
                     </a>
                 </div>
                 <p className="text-base text-center text-gray-400 mt-2">
-                    © 2021 Roberto Andrade, Inc. All rights reserved. <br/>
-                    Website created By Mora Hubert
+                    © 2022 Roberto Andrade, Inc. All rights reserved.
                 </p>
             </div>
         </section>

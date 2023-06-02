@@ -33,7 +33,7 @@ class HeroHome extends Component {
               </div>
               <div className="w-full mt-5 justify-center sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="w-full md:4/6 lg:4/6 flex justify-center md:justify-start rounded-md shadow bg-transparent">
-                  <Link className="w-4/6 md:w-64 flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-md text-white bg-blue md:py-4 md:text-lg md:px-10" to="/calendario">Encuentra tus boletos</Link>
+                  <Link className="w-4/6 md:w-64 flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-md text-white bg-blue md:py-4 md:text-lg md:px-10" to="/shows">Encuentra tus boletos</Link>
                 </div>
               </div>
             </div>

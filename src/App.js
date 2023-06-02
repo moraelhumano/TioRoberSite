@@ -30,7 +30,7 @@ function App() {
             <PepsiCenterBanner />
               <Route   path="/" component={Home} exact />
               {/* <Route path="/alumni" component={Alumni}  /> */}
-              <Route path="/calendario" component={Bio}  />
+              <Route path="/shows" component={Bio}  />
             </div>
         </React.Fragment>
       </Switch>

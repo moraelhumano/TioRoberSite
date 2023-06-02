@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import LogoRober from '../../src/logo-flower.svg';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,19 +32,23 @@ const NavBar = () => {
           <Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
             <img className="h-15 items-center" src={LogoRober} alt="" />
           </Link>
-          <div className='flex justify-end'>
-            <Link to="/calendario" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
-              <h2 className="text-base lg:text-lg">FECHAS</h2>
-            </Link>
-            <Link to="/calendario" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
-              <h2 className="text-base lg:text-lg">TIENDA</h2>
-            </Link>
-            <Link to="/calendario" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
-              <h2 className="text-base lg:text-lg">PRENSA</h2>
-            </Link>
-            <Link to="/calendario" className="toggleColour flex text-white no-underline hover:no-underline font-bold ">
-              <h2 className="text-base lg:text-lg">CONTENIDO</h2>
-            </Link>
+          <div className='flex'>
+          {/*<Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
+                <h2 className="text-base lg:text-lg">TIENDA</h2>
+              </Link>
+              <Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
+                <h2 className="text-base lg:text-lg">PRENSA</h2>
+              </Link>
+              <Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
+                <h2 className="text-base lg:text-lg">CONTENIDO</h2>
+  </Link>*/}
+          { location.pathname !== "/shows" &&
+            <div className='flex justify-end'>
+              <Link to="/calendario" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
+                <h2 className="text-base lg:text-lg">FECHAS</h2>
+              </Link>
+            </div>
+          }
           </div>
         </div>
       </div>

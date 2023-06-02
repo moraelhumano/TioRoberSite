@@ -2,19 +2,9 @@ import React, { Component } from 'react';
 import Zoom from 'react-reveal/Zoom';
 import Bounce from 'react-reveal/Bounce';
 
-import LaHoraFelizLogo from '../../src/LaHoraFelizHD.png';
 import PinturaRober from '../../src/TioDibujo.jpg';
 
 
-import PurLogo from '../../src/';
-
-
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 
 
