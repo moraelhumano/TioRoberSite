@@ -32,6 +32,7 @@ const NavBar = () => {
           <Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
             <img className="h-15 items-center" src={LogoRober} alt="" />
           </Link>
+        
           <div className='flex'>
           {/*<Link to="/" className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8">
                 <h2 className="text-base lg:text-lg">TIENDA</h2>
@@ -49,6 +50,9 @@ const NavBar = () => {
               </Link>
             </div>
           }
+            <a href='https://bandaranga.com/' className="toggleColour flex text-white no-underline hover:no-underline font-bold mr-8" target='_blank'>
+              <h2 className="text-base lg:text-lg">BANDARANGA</h2>
+            </a>
           </div>
         </div>
       </div>
@@ -88,9 +92,10 @@ const NavBar = () => {
             <Link to="/shows" className="py-2 flex text-white font-bold">
               <h2 className="">FECHAS</h2>
             </Link>
-          {/*  <Link to="/calendario" className="py-2 flex text-white font-bold">
+            <a href='https://bandaranga.com/' className="py-2 flex text-white font-bold">
               <h2 className="">TIENDA</h2>
-            </Link>
+            </a>
+          {/*  
             <Link to="/calendario" className="py-2 flex text-white font-bold">
               <h2 className="">PRENSA</h2>
             </Link>
