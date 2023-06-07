@@ -32,9 +32,8 @@ class Profile extends Component{
                                 ¡Ma po favo!
                             </h3>
                             <p className="text-2xl text-gray-600 mt-4">
-                            Además de <b>comediante y locutor</b>, he colaborado como guionista y cineasta egresado del 
-                            Centro de Capacitación Cinematográfica y en <b>2007 fundé el Centro Cultural Woody 
-                            Allen.</b> 
+                               <b> El INMAMABLE</b> comediante de <b>LA HORA FELIZ</b> y <b>PUR DE PATOS</b>. Y que escribió y actuó la película <b>OK, ESTÁ BIEN</b>.
+                                Y que anda de gira. Y que parece un maniquí.
                             </p>
                         </div>
                         <Carousel className="carousel-fan h-full w-full sm:w-1/2" interval={3000} autoPlay swipeable dynamicHeight infiniteLoop width  >

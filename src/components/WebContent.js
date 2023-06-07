@@ -15,9 +15,8 @@ class WebContent extends Component {
                                 <div className="h-1/2 sm-text-center text-center align-center mt-2 md:mt-0 flex flex-col items-center">
                                     <img className="w-28 md:w-52 self-center rounded-full" src={PinturaRober} />
                                     <p className="md:w-10/12 w-11/12 text-center text-lg md:text-2xl text-white mt-2 md:mt-4">
-                                        Con más de 20 años como escritor y 10 en la escena del Stand Up se ha colocado como una de las figuras
-                                        más influyentes dentro del medio.
-                                        Además de ser el primer comediante en grabar una película de forma independiente</p>
+                                    Checate el contenido del <b> El INMAMABLE comediante</b> de <b>LA HORA FELIZ</b> y <b>PUR DE PATOS</b>. Y que escribió y actuó la película <b>OK, ESTÁ BIEN</b>.
+                                Y que anda de gira. Y que parece un maniquí.</p>
                                     <div className="mt-5 w- sm:flex justify-center">
                                         <div className="shadow">
                                             <a href='https://www.youtube.com/@TIOROBER_tiorober' target='_blank' className="w-full flex items-center justify-center px-8 py-3 border border-white text-base font-medium text-white bg-blue md:py-4 md:text-lg md:px-10" to="/calendario">Mira aquí el  contenido</a>
