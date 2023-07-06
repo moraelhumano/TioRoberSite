@@ -16,7 +16,8 @@ import show08 from '../../src/LHF26062023V2.jpeg';
 import show09 from '../../src/LHF27062023V2.jpeg';
 import show10 from '../../src/LHF29062023V2.jpeg';
 import show11 from '../../src/LHF03072023V2.jpeg';
-import show12 from '../../src/LHF10082023V2.jpeg';
+import show12 from '../../src/PDP04082023.jpeg';
+import show13 from '../../src/LHF10082023V2.jpeg';
 
 
 const eventos = [
@@ -31,13 +32,12 @@ const eventos = [
     { id: 10, fecha: '27 de Junio', ubicacion: 'Ámsterdam, HOL', lugar: 'Boom Chicago',boletosLink:'https://fareharbor.com/embeds/book/boomchicago/items/439992/availability/1134941906/book/?full-items=yes', hora:"20:00 HRS"  },
     { id: 11, fecha: '29 de Junio', ubicacion: 'Dublín, IE', lugar: 'Kalabasa Market',boletosLink:'https://www.eventbrite.ie/e/esta-mal-reirse-de-esto-stand-up-comedy-espanol-tickets-631721244247', hora:"20:30 HRS"  },
     { id: 12, fecha: '3 de Julio', ubicacion: 'Londres, ING', lugar: 'Up The Creek',boletosLink:'https://www.eventbrite.ie/e/esta-mal-reirse-de-esto-stand-up-comedy-espanol-tickets-544693983367', hora:"20:30 HRS"  },
-    { id: 13, fecha: '10 de Agosto', ubicacion: 'CDMX, MX', lugar: 'Pepsi Center', boletosLink:'https://www.eticket.mx/masinformacion.aspx?IdEvento=30710', hora:"21:00 HRS"  },
-    { id: 14, fecha: '26 de Agosto', ubicacion: 'Guadalajara, JAL', lugar: '',boletosLink:'', hora:""  },
+    { id: 13, fecha: '4 de Agosto', ubicacion: 'Puebla, MX', lugar: 'Teatro Principal', boletosLink:'https://arema.mx/evento/10357', hora:"21:00 HRS"  },
+    { id: 14, fecha: '10 de Agosto', ubicacion: 'CDMX, MX', lugar: 'Pepsi Center', boletosLink:'https://www.eticket.mx/masinformacion.aspx?IdEvento=30710', hora:"21:00 HRS"  },
+    { id: 15, fecha: '26 de Agosto', ubicacion: 'Guadalajara, JAL', lugar: '',boletosLink:'', hora:""  },
 
 
 ];
-
-console.log(eventos);
 
 
 class Shows extends Component {
@@ -113,6 +113,9 @@ class Shows extends Component {
                                     </div>
                                     <div className="flex">
                                         <img className="img-carousel-shows" src={show12} />
+                                    </div>
+                                    <div className="flex">
+                                        <img className="img-carousel-shows" src={show13} />
                                     </div>
                                 </Carousel>
                             </div>

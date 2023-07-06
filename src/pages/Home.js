@@ -16,6 +16,7 @@ class Home extends Component {
                 <HeroHome />
                 <Shows />
                 <WebContent />
+                <Projects />
                 {/*<Profile />
                 <Clases />
         <Projects />*/}
