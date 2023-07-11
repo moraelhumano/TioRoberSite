@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Collaborations from '../components/Collaborations';
+import NavBar from '../components/Navbar';
+
+
+
+class collaborationsPage extends Component{
+    render() {
+        return (
+          
+            <>
+            <NavBar />
+            <Collaborations />
+            <NavBar />
+
+            </>
+        
+
+        )
+    }
+}
+export default collaborationsPage;
+
+
